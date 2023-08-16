@@ -18,6 +18,14 @@
   Caso a função seja chamada sem nenhum parâmetro, o valor undefined deve ser retornado.
 */
 
-const vqv = () => {};
+function vqv(nome, idade) {
+  if (nome && idade) {
+    return `Oi, meu nome é ${nome}!\n
+    Tenho ${idade} anos,\n
+    trabalho na Trybe e mando muito em programação!\n
+    #VQV!`;
+  } 
+    return undefined;
+}
 
 module.exports = vqv;
