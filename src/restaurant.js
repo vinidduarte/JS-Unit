@@ -11,7 +11,7 @@ function createMenu(menu) {
         if (menu.food[item] || menu.drinks[item]) {
           consumption.push(item);
         } else {
-          return "Item indisponível";
+          return 'Item indisponível';
         }
       },
       pay: () => {
@@ -24,12 +24,12 @@ function createMenu(menu) {
           }
         }
         return total * 1.1;
-      }
+      },
     };
   }
   const menu = {
     food: { coxinha: 3.90, sanduiche: 9.90 },
-    drinks: { agua: 3.90, cerveja: 6.90 }
+    drinks: { agua: 3.90, cerveja: 6.90 },
   };
   const restaurant = createMenu(menu);
     
@@ -47,6 +47,5 @@ function createMenu(menu) {
   console.log(restaurant.consumption);     
   
   console.log(restaurant.pay()); 
-  
   
   module.exports = createMenu;
