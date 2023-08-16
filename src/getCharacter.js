@@ -68,5 +68,11 @@ const getCharacter = (name) => {
 
   return undefined;
 };
+console.log(getCharacter());// 1. Teste se a função, quando não recebe nenhum parâmetro, retorna undefined.
+    console.log(getCharacter('Arya'));// 2. Teste se a função retorna o objeto correto para o parâmetro 'Arya',
+    console.log(getCharacter('Brienne'));// 3. Teste se a função retorna o objeto correto para o parâmetro 'Brienne',
+    console.log('Melissandre');// 4. Teste se a função retorna o objeto correto para o parâmetro 'Melissandre',
+    console.log('melissandre');// 5. Teste se o parâmetro não é Case Sensitive, ou seja, independente de conter letras maiúsculas ou minúsculas retorna o mesmo objeto relativo a ele.
+    console.log('Vinicius');
 
 module.exports = getCharacter;
